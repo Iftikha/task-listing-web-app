@@ -33,7 +33,7 @@ This is a simple web application that allows users to create, read, update and d
 
 ## License
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
-```
+
 
 ## Aurthor
 - [Iftikhar Ahmed](https://www.instagram.com/i_arf.g/)
