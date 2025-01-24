@@ -1,0 +1,99 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background: #141414;
+    width: 100%;
+    min-height: 100%;   
+    color: white; 
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+h1{
+    text-align: center;
+    padding: 10px;
+}
+.addTask{
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+input, textarea{
+    display: block;
+    margin-top: 10px;
+    padding: 5px 10px;
+    width: 600px;
+    font-size: 16px;
+    background: #1e1e1e;
+    border: 2px solid #1c1b1b;
+    border-radius: 5px;
+    outline: none;
+    color: white;
+}
+textarea{
+    resize: none;
+}
+input:focus, textarea:focus{
+    border: 2px solid #4060ff;
+}
+.addTaskBtn{
+    background-color: #3759ff;
+    width: fit-content;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: 0.3s all ease;
+}
+.addTaskBtn:hover{
+    background-color: #4060ff;
+}
+.viewTask{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.task{
+    min-width: 250px;
+    padding: 10px;
+    background-color: #1e1e1e;
+    border-radius: 5px;
+    margin: 10px;
+    border: 2px solid #1e1e1e;
+}
+a{
+    color: #3759ff;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 4px;
+    font-weight: 100;
+    transition: 0.3s all ease;
+}
+a:hover{
+    color: #4060ff;
+    text-decoration: underline;
+}
+.emptyTasks{
+    color: #1e1e1e;
+    text-align: center;
+    width: 100%;
+}
+.showDesc{
+    padding: 50px;
+    h2{
+        display: block;
+        margin: 10px 0;
+    }
+    p{
+        display: block;
+        margin: 10px 0;
+    }
+}
+.delTask{
+    color: #ea1a1a;
+    display: inline-block;
+    padding: 0 10px;
+}
+.delTask:hover{
+    color: #f32828;
+}

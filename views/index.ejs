@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task List!</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <div class="main">
+        <h1>To Do Tasks!</h1>
+        <div class="addTask">
+            <form action="/file/create" method="post">
+                <input type="text" class="taskTitle" placeholder="Task Tile" name="title">
+                <textarea class="taskDesc" placeholder="Task Description" name="desc"></textarea>
+                <input type="submit" value="Add Task" class="addTaskBtn">
+            </form>
+        </div>
+        <h1>Added Tasks!</h1>
+        <div class="viewTask">
+            <% if(files.length > 0){ 
+                files.forEach((val) => { %>
+                    <div class="task">
+                        <h2><%= val %></h2>
+                        <a href="/file/<%= val %>">Read More!</a>
+                        <a class="delTask" href="/file/delete/<%= val %>">Delete Task!</a>
+                    </div>
+                <% })} else{ %>
+                    <h2 class="emptyTasks">No Task Found!</h2>
+                <% } %>
+        </div>
+    </div>
+</body>
+</html>
